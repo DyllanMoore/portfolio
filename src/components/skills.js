@@ -1,14 +1,14 @@
 export function Skills() {
     return (
-        <div className="SkillsContainer">
+        <div className="SkillsContainer Container">
             <h2 className="Heading" id="Skills">
                 Skills
             </h2>
-            <table>
+            <table className="LanguageTable">
                 <thead>
                     <tr>
-                        <th>Languages</th>
-                        <th>Experience</th>
+                        <th className="Language">Languages</th>
+                        <th className="Language">Experience</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,11 +33,11 @@ export function Skills() {
                 </tbody>
             </table>
 
-            <table>
+            <table className="LibraryTable">
                 <thead>
                     <tr>
-                        <th>Libraries &#38; Frameworks</th>
-                        <th>Experience</th>
+                        <th className="Library">Libraries &#38; Frameworks</th>
+                        <th className="Library">Experience</th>
                     </tr>
                 </thead>
                 <tbody>

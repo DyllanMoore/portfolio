@@ -1,15 +1,169 @@
+/* Universal Stylin g */
+:root {
+  /* Colors */
+  --primary: #0596f7;
+  --light: #e8ebed;
+  --dark: #013a61;
+  --white: #FFFFFF;
+  --black: #000000;
+
+  /* Fonts */
+  --serif: 'Libre Baskerville', serif;
+  --sans-serif: 'Libre Franklin', sans-serif;
+
+  /* Borders */
+  --border-radius: 20px;
+  --box-shadow: 5px 5px 10px var(--dark);
+}
+
+
+/* Background */
+.BackgroundImage {
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
+
 /* Menu List */
+.MenuContainer {
+  padding: 0.1vh;
+  position: sticky;
+  background-color: var(--light);
+  text-align: center;
+}
+
 .MenuList {
   list-style: none;
-  text-align: center;
 }
 
 .MenuListItem {
   display: inline;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  font-size: 16pt;
+  padding-right: 3vw;
 }
 
-img {
-  height: 200px;
+/* Name & Resume */
+.HeaderContainer {
+  height: 25vh;
+  text-align: center;
+}
+
+h1 {
+  color: var(--dark);
+  font-family: var(--serif);
+  font-size: 45pt;
+}
+
+.ResumeLink {
+  border: 1px solid var(--dark);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2vh 4vw;
+  font-size: 20pt;
+}
+
+.ResumeLink:hover {
+  box-shadow: none;
+}
+
+/* Headers */
+.Heading {
+  background-color: var(--light);
+  font-family: var(--serif);
+  font-size: 45pt;
+  color: var(--dark);
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+
+}
+
+/* Body Margins */
+.Container {
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+
+/* About Section*/
+.Headshot {
+  width: 15vw;
+  border: 5px solid var(--dark);
+  margin-left: 1vw;
+}
+
+.AboutInfo {
+  display: inline;
+  position: absolute;
+  width: 30vw;
+  font-family: var(--sans-serif);
+  color: var(--dark);
+  text-align: left;
+  padding-left: 2vw;
+  font-size: 18pt;
+  margin-top: 1.5vh;
+}
+
+/* Skills Section*/
+.LanguageTable,
+.LibraryTable {
+  text-align: center;
+  margin: auto;
+  color: var(--dark);
+}
+
+th {
+  font-family: var(--serif);
+  width: 30vw;
+  border-bottom: 2px solid var(--primary);
+}
+
+td {
+  font-family: var(--sans-serif);
+  width: 30vw;
+  border-bottom: 2px solid var(--light);
+}
+
+
+.LibraryTable {
+  margin-top: 5vh;
+}
+
+
+
+
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  color: var(--primary);
+  text-decoration: none;
+  font-family: var(--serif);
+}
+
+a:hover {
+  color: var(--dark);
+  cursor: pointer;
+}
+
+/* Smaller than 1060px */
+@media (max-width: 1060px) {
+  .Container {
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+
+  .Headshot {
+    width: 30vw;
+  }
+
+  .AboutInfo {
+    display: inline;
+    position: absolute;
+    width: 68vw;
+  }
+
 }

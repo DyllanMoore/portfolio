@@ -1,6 +1,6 @@
 export function Menu() {
     return (
-        <div className="Menu">
+        <div className="MenuContainer Container">
             <ul className="MenuList">
                 <li className="MenuListItem"><a href="#About">About</a></li>
                 <li className="MenuListItem"><a href="#Skills">Skills</a></li>

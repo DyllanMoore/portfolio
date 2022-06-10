@@ -1,4 +1,4 @@
-export function Projects(props) {
+export function Projects() {
     const projectList = [{
         projectName: "Ecommerce Storefront",
         projectImage: "#",
@@ -31,11 +31,11 @@ export function Projects(props) {
 
     return (
         projectList.map((project) => (
-            <div cllassName="ProjectsContainer" id="Projects">
+            <div className="ProjectsContainer Container" id="Projects">
                 <h4>
                     {project.projectName}
                 </h4>
-                <img src={project.projectImage} alt={props.projectImageAlt} />
+                <img src={project.projectImage} alt={project.projectImageAlt} />
                 <p>
                     {project.projectDescription}
                 </p>
@@ -43,15 +43,5 @@ export function Projects(props) {
             </div>
         )
         )
-        // <div cllassName="ProjectsContainer" id="Projects">
-        //     <h4>
-        //         {props.projectName}
-        //     </h4>
-        //     <img src={props.projectImage} alt={props.projectImageAlt} />
-        //     <p>
-        //         {props.projectDescription}
-        //     </p>
-        //     <a href={props.projectLinkGithub} target="_blank">View on GitHub</a>
-        // </div>
     )
 }
