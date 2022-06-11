@@ -60,7 +60,7 @@ h1 {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   padding: 2vh 4vw;
-  font-size: 20pt;
+  font-size: 18pt;
 }
 
 .ResumeLink:hover {
@@ -71,7 +71,7 @@ h1 {
 .Heading {
   background-color: var(--light);
   font-family: var(--serif);
-  font-size: 45pt;
+  font-size: 30pt;
   color: var(--dark);
   text-align: center;
   padding-top: 1vh;
@@ -115,6 +115,7 @@ h1 {
 
 th {
   font-family: var(--serif);
+  font-size: 18pt;
   width: 30vw;
   border-bottom: 2px solid var(--primary);
 }
@@ -123,15 +124,59 @@ td {
   font-family: var(--sans-serif);
   width: 30vw;
   border-bottom: 2px solid var(--light);
+  font-size: 14pt;
 }
-
 
 .LibraryTable {
   margin-top: 5vh;
 }
 
+/* Projects Section */
 
+.ProjectsContainer {
+  text-align: center;
+  color: var(--dark);
+  margin-left: 35vw;
+  margin-right: 35vw;
+  border-bottom: 5px solid var(--light);
+  padding-bottom: 5vh;
+}
 
+.ProjectName {
+  font-family: var(--serif);
+  font-size: 18pt;
+}
+
+.ProjectDescription {
+  font-family: var(--sans-serif);
+  font-size: 14pt;
+}
+
+.ProjectLink {
+  border: 1px solid var(--dark);
+  padding: 1vh 2vw;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.ProjectLink:hover {
+  box-shadow: none;
+}
+
+.ProjectImage {
+  width: 30vw;
+  border: 5px solid var(--dark);
+}
+
+/* Contact Section */
+.ContactContainer {
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+.Logo {
+  width: 5vw;
+}
 
 
 /* Links */
@@ -166,4 +211,11 @@ a:hover {
     width: 68vw;
   }
 
+  .ProjectImage {
+    width: 50vw;
+  }
+
+  .Logo {
+    width: 10vw;
+  }
 }
